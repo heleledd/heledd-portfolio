@@ -1,0 +1,48 @@
+.stack-wrapper {
+    position: relative;
+    min-height: 400vh;
+}
+
+.stack-card {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 1rem;
+
+    color: white;
+    margin: 0rem 3rem;
+    padding: 1rem;
+    border-radius: 1rem;
+    /* height: 20rem; */
+    position: sticky;
+    top: 5rem;
+    margin-bottom: 7rem;
+
+}
+
+.stack-card.second {
+    top: 10rem;
+}
+
+.stack-card.third {
+    top: 15rem;
+}
+
+.card-image {
+    width: 25%;
+    height: 100%;
+    object-fit: cover;   /* crops but never distorts */
+    border-radius: 1rem;
+}
+
+.card-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    height: 100%;  
+}
+
+.h2 {
+    font-size: larger;
+}
