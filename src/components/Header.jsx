@@ -1,8 +1,14 @@
+import chefImage from '../images/bright-star.svg';
+import '../styles/Header.css';
+
 function Header() {
 
   return (
     <>
-      <p>Hello this is Header</p>
+      <div className="header-container">
+        <img src={chefImage} alt="Chef Claude" className="headerImage" />
+        <span>Heledd JUBB</span>
+      </div>
     </>
   )
 }

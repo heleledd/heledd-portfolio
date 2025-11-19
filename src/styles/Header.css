@@ -1,0 +1,22 @@
+.header-container {
+  background-color: #011627;
+  color: #FDFFFC;
+  padding: 0.5rem;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  height: 40px;
+  box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.10), 0px 1px 2px 0px rgba(0, 0, 0, 0.06);
+}
+
+
+span {
+    font-weight: 600;
+    font-size: 2rem;
+}
+
+.headerImage {
+    width: 43px;
+    height: 52px;
+    margin-right: 10px;
+}
