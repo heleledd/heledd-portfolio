@@ -30,9 +30,9 @@ export default function Footer() {
 
       </div>
 
-      <p className="footer-bottom">
+      {/* <p className="footer-bottom">
         © {new Date().getFullYear()} Heledd. All rights reserved.
-      </p>
+      </p> */}
     </footer>
   );
 }

@@ -1,16 +1,11 @@
-.stack-wrapper {
-  position: relative;
-  min-height: 400vh;
-}
+
 
 .stack-card {
   color: white;
   margin: 0rem 3rem;
   padding: 1.5rem;
   border-radius: 1rem;
-  position: sticky;
-  margin-bottom: 7rem;
-  min-height: 20rem;
+  margin-bottom: 40px;
 }
 
 .about-me-container {
@@ -26,8 +21,9 @@
 }
 
 .profile-image {
-  height: 400px;
+  width: 180px;
   object-fit: cover;
   border-radius: 1rem;
+  margin-left: 10px;
 }
 
