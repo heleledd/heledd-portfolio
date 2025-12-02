@@ -1,0 +1,39 @@
+.modal-container {
+    position: fixed;
+    inset: 0;
+    background: rgba(0,0,0,0.5);
+    backdrop-filter: blur(4px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 2000;
+}
+
+.modal-card {
+    background: white;
+    padding: 2rem;
+    border-radius: 12px;
+    width: 450px;
+    position: relative;
+    max-height: 80vh;
+    overflow-y: auto;
+}
+
+.close-modal-btn {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+
+    background: none; 
+    border: none;
+    padding: 0;
+    cursor: pointer;
+
+    z-index: 10;
+}
+
+/* .rider-full-profile-image {
+    height: 300px;
+    border-radius: 8px;
+    margin-bottom: 1rem;
+} */

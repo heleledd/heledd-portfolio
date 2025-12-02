@@ -1,5 +1,6 @@
 import React from "react";
-import Carousel from "./Carousel"
+import Carousel from "./Carousel.jsx";
+import ReadMoreOverlay from "./ReadMoreOverlay.jsx";
 import '../styles/Main.css'
 import profileImage from "../images/heledd-profile-photo.jpg";
 
@@ -9,6 +10,27 @@ import githubLogo from '../images/github.svg';
 import linkedInLogo from '../images/linkedInLogo.png';
 
 export default function Main() {
+  const [viewingFullCard, setViewingFullCard] = React.useState(null);
+
+  React.useEffect(() => {
+    if (viewingFullCard !== null) {
+      document.body.style.overflow = 'hidden';
+    } else {
+      document.body.style.overflow = 'unset';
+    }
+
+    return () => {
+      document.body.style.overflow = 'unset';
+    };
+  }, [viewingFullCard]);
+
+  function handleCardClick(item) {
+    if (viewingFullCard?.name === item.name) {
+      setViewingFullCard(null); // Close the card if it's already open
+    } else {
+      setViewingFullCard(item); // Open the clicked card
+    }
+  }
 
   return (
     <div className="stack-wrapper">
@@ -47,14 +69,19 @@ export default function Main() {
       {/* Projects */}
       <div className="stack-card" style={{backgroundColor:"#9A7197"}}>
         <h2>Projects</h2>
-        <Carousel items={projects} />
+        <Carousel items={projects} handleCardClick={handleCardClick} />
       </div>
 
       {/* Experience */}
       <div className="stack-card" style={{backgroundColor:"#886176"}}>
         <h2>Experience</h2>
-        <Carousel items={experiences} />
+        <Carousel items={experiences} handleCardClick={handleCardClick} />
       </div>
+
+      {/* Full Card Overlay */}
+      {viewingFullCard !== null &&
+        <ReadMoreOverlay item={viewingFullCard} handleCardClick={handleCardClick} />
+      }
 
     </div>
   );
