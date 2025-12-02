@@ -2,30 +2,13 @@ import React from "react";
 import Carousel from "./Carousel"
 import '../styles/Main.css'
 import profileImage from "../images/heledd-profile-photo.jpg";
-import project1 from "../images/bright-star-white.svg";
-import project2 from "../images/bright-star-white.svg";
-import project3 from "../images/bright-star-white.svg";
-import exp1 from "../images/bright-star-white.svg";
-import exp2 from "../images/bright-star-white.svg";
-import exp3 from "../images/bright-star-white.svg";
+
+import projects from "../data/projects.js";
+import experiences from "../data/experiences.js";
 import githubLogo from '../images/github.svg';
 import linkedInLogo from '../images/linkedInLogo.png';
 
 export default function Main() {
-
-  const projects = [
-    { name: "Project One", desc: "Description of project one", img: project1 },
-    { name: "Project Two", desc: "Description of project two", img: project2 },
-    { name: "Project Three", desc: "Description of project three", img: project3 },
-    { name: "Project Three", desc: "Description of project three", img: project3 },
-  ];
-
-  const experiences = [
-    { name: "Experience One", desc: "Description of experience one", img: exp1 },
-    { name: "Experience Two", desc: "Description of experience two", img: exp2 },
-    { name: "Experience Three", desc: "Description of experience three", img: exp3 },
-    { name: "Project Three", desc: "Description of project three", img: project3 },
-  ];
 
   return (
     <div className="stack-wrapper">
