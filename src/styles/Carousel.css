@@ -20,8 +20,8 @@
 }
 
 .carousel-img {
-    height: 44px;
-    width: 44px;
+    height: 100px;
+    margin-top: 20px;
 }
 
 .carousel-content-container {
@@ -29,8 +29,9 @@
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    gap: 4px;
+    gap: 2px;
     padding: 4px;
+    margin: 0 8px;
 }
 
 .carousel-card:hover {
@@ -43,4 +44,20 @@
     
 }
 
+.card-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin-top: 1.5rem;
+    justify-content: center; /* centers tags horizontally */
+}
+
+.tag {
+    background: #0b253d;
+    color: #fff;
+    padding: 6px 12px;
+    border-radius: 20px;
+    font-size: 0.85rem;
+    border: 1px solid rgba(255,255,255,0.2);
+}
 

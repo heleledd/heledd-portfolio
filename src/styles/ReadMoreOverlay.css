@@ -10,19 +10,24 @@
 }
 
 .modal-card {
-    background: white;
+    background: #011627;
+    color: white;
     padding: 2rem;
     border-radius: 12px;
-    width: 450px;
+    width: 800px;
     position: relative;
     max-height: 80vh;
     overflow-y: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;  
 }
 
 .close-modal-btn {
     position: absolute;
     top: 10px;
     right: 10px;
+    color: white;
 
     background: none; 
     border: none;
@@ -30,6 +35,12 @@
     cursor: pointer;
 
     z-index: 10;
+}
+
+.full-profile-image {
+    height: 300px;
+    border-radius: 8px;
+    margin: auto;
 }
 
 /* .rider-full-profile-image {
